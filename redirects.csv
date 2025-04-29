@@ -1,0 +1,3 @@
+/path,status_code,target_url
+/github,301,https://github.com/nitondev
+/hello,301,https://raw.githubusercontent.com/nitondev/scripts/refs/heads/main/hello-world.sh

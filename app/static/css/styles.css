@@ -1,0 +1,178 @@
+/* Global Styles */
+:root {
+  background-color: #121212;
+  color: white; 
+  margin: 0;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html, body {
+	  font-family: Inter, sans-serif;
+}
+
+code {
+	background-color: #2d2929;
+	padding: 2px 3px 2px 3px;
+	font-size: 13px;
+}
+
+.alert {
+	border: 1px solid #373535;
+	border-radius: 10px;
+	padding: 1rem;
+	margin-bottom: 0.9rem;
+	background-color: #1a1a1ae3;
+}
+
+.alert.alert-info {
+	border: 1px solid #2a7c9df5;
+	background-color: #0b3567cf;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px; /* Limits the width to 800px */
+  margin: 0 auto; /* Centers the container */
+  padding: 1rem; /* Adds padding to the container */
+}
+
+/* Green circle for icon */
+.bi-circle-fill {
+  color: #11d911;
+  margin-right: 0.5rem;
+}
+
+/* Lowercase text */
+h1 span.lowercase {
+  text-transform: lowercase;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: limegreen;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #99ff99;
+}
+
+/* Version Display */
+#version {
+  color: white;
+}
+
+#version a {
+  color: limegreen;
+  text-decoration: none;
+}
+
+#version a:hover {
+  text-decoration: underline;
+}
+
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem;
+  margin-top: 2rem;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+nav .active {
+  background-color: #444;
+  color: limegreen;
+}
+
+/* Footer styles */
+footer {
+  margin-top: auto; 
+  padding: 1rem;
+  background-color: #1a1a1a;
+  text-align: center;
+  border-radius: 12px;
+}
+
+footer a {
+  color: #11d911;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 1rem;
+    width: auto;
+    text-align: center;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
